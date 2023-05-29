@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'Glorify DEMO';
+    src: url('/font/Glorifydemo-BW3J3.otf') format('opentype');
+}
+
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url('/img/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 38px 10px;
+    position: relative;
+    z-index: 9999;
+
+}
+
+.cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 9999;
+}
+
+.card {
+    background: rgba(255, 252, 254, 0.58);
+    border: 1px solid rgba(0, 0, 0, 0.59);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 36px;
+    width: 261px;
+    height: 480px;
+    position: relative;
+}
+
+
+
+.card h1 {
+    margin-top: 32px;
+    font-family: 'Glorify DEMO';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    color: #FBF9FA;
+
+    background: rgba(148, 51, 109, 0.74);
+    border-radius: 0px 45px 45px 0px;
+    padding: 19px 62px 19px 19px;
+
+    width: 224px;
+    height: 90px;
+}
+
+
+.card-content {
+    padding: 0px 20px;
+}
+
+.card-content h4 {
+    margin-top: 22px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22.9859px;
+    line-height: 84.11%;
+    color: #000000;
+}
+
+
+.card-content p {
+    margin-top: 7px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20.1127px;
+    line-height: 16px;
+    color: #000000;
+}
+
+
+
+
+.buttons {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.buttons a {
+    font-family: 'Glorify DEMO';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21.6316px;
+    line-height: 24px;
+    text-align: center;
+    color: #FBF9FA;
+
+    background: #9F2C71;
+    border-radius: 24.2447px;
+    padding: 9px;
+}
+
+.lower-card {
+    background: rgba(255, 252, 254, 0.58);
+    border: 1px solid rgba(0, 0, 0, 0.59);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 36px;
+    padding: 16px;
+    height: 218px;
+    width: 810px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+    position: relative;
+    z-index: 9999;
+}
+
+.lower-card h1 {
+    background: rgba(159, 44, 113, 0.74);
+    border-radius: 34.1603px;
+    font-family: 'Glorify DEMO';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    color: #FBF9FA;
+    max-width: 356px;
+    text-align: center;
+    padding: 17px;
+    margin: auto;
+}
+
+.lower-card p {
+    margin-top: 45px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20.1127px;
+    line-height: 122.36%;
+    text-align: center;
+    color: #000000;
+
+
+}
+
+footer {
+    margin-top: 45px;
+    padding: 5px 0px 67px 0px;
+    position: relative;
+    text-align: center;
+
+}
+
+footer span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    position: relative;
+    z-index: 9999;
+}
+
+footer::before {
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(359.62deg, #FFFFFF -3.85%, rgba(255, 255, 255, 0) 16.77%);
+}
+
+
+@media all and (max-width: 839px) {
+    main{
+        padding: 10px;
+    }
+    .lower-card {
+        max-width: 100%;
+    }
+    footer{
+        padding-left: 10px ;
+        padding-right: 10px ;
+    }
+}
